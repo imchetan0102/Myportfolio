@@ -1,0 +1,205 @@
+
+@media screen and (max-width: 768px){
+
+    
+    .box2{
+        position: relative;
+        width: 600px;
+        height: 600px;
+        background: rgb(244, 244, 245);
+        border-radius: 50%;
+        /* border-width: 30pxpx; */
+        overflow: hidden;
+        margin-left: 230px;
+        opacity: 0.;
+        animation: slideRight 2s ease forwards ;
+        animation-delay: .3s;
+        margin-top: 120px;
+        /* padding-bottom: 80px; */
+    }
+
+    .bg{
+        /* background-color: rgb(20, 20, 78); */
+        width: 999px;
+        height: 40vh;
+        margin-top: -45px;
+        padding-top: 12px;
+        border: 10px beige;
+
+       
+    }
+
+ 
+
+    .box2::before{
+        content: '';
+        position: absolute;
+        inset: -10px 130px;
+        background: linear-gradient(315deg, #00ccff,#d400d4);
+        transition: 0.5s;
+        animation: animate 4s linear infinite;
+        border: 10px;
+       
+    }
+
+
+
+    .box2:hover::before{
+        inset: -20px 0px;
+    }
+
+    @keyframes animate{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+        
+    .pic1{
+        width: 400px;
+        border: none;
+        border-radius: 50%;
+        margin-left: 0px;
+        margin-top: 0px;
+        opacity: 0;
+        animation: slideRight 1s ease forwards ;
+        animation-delay: .1s;
+        /* border: 10px; */
+        
+        
+    }
+
+
+
+
+    .box2::after{
+        content: '';
+        position: absolute;
+        inset: 6px;
+        background: #2b3049;
+        border-radius:50% ;
+        /* border: 10px; */
+        z-index: 1;
+    }
+
+    .about-img{
+        position: absolute;
+        inset: 30px;
+        border: 10px solid #15161b;
+        z-index: 3;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* padding-left: 120px; */
+        
+
+    }
+
+    .about-img img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+        pointer-events: none;
+        z-index: 3;
+       /* padding-right: 80px; */
+       /* border: 10px; */
+       
+    }
+
+    .box2:hover .about-img img{
+        opacity: 0;
+        /* border: 10px; */
+    }
+
+    .about-img h2{
+        position: relative;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #4e0707;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        border: 10px;
+    }
+
+    .about-img h2 span{
+        font-weight: 300;
+        font-size: 0.75em;
+        border: 10px;
+    }
+
+    .about-img a{
+        position: relative;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background: #fff;
+        color: black;
+        border-radius: 25px;
+        font-weight: 500;
+        font-size: 1.25em;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        transition: 0,05s;
+        border: 10px;
+
+    }
+
+    .about-img a:hover{
+        letter-spacing: 0.2em;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.extra {
+    display: none;
+  }
+  
+  .read-more-btn::before {
+    content: "Read More";
+  }
+  
+  .read-more-btn.active::before {
+    content: "Read Less";
+  }
+  
+  .services-list .service-box {
+    position: relative;
+  }
+  
+  .services-list .service-box .read-more-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: blue;
+  }
+  

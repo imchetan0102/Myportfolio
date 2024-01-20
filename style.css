@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* ======================================================Header======================================================================= */
+
+.header{
+    width: 100%;
+   position: fixed;
+    color: #000000;
+    background: rgb(0, 0, 0,0.4);
+    z-index: 100;
+} 
+
+nav::before{
+    opacity: 0.35;
+}
+
+ul{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+ul li:hover{
+    background:#dfb4b4 ;
+    color: #000;
+    border-radius: 4px;
+}
+
+ul li a{
+    color: #030303;
+    text-decoration: none;
+    opacity: 0;
+}
+
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    background: #050000;
+    text-align: right;
+    box-sizing: border-box;
+    color: #dacece;
+    font-size: 30px;
+    display: none;
+
+}
+
+.about-img h2{
+    display: none;
+}
+
+.about-img h2 span{
+    display: none;
+}
+
+.about-img a{
+    display: none;
+}
+
+
+
+/* ====================================================================LOGO-================================================== */
+.logo{
+    position: relative;
+    font-size: 50px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: default;
+    opacity: 0;
+    transition-delay: 1s;
+    animation: slideRight 1s ease forwards;
+}
+
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+    opacity: 0 ; 
+    animation: slideTop .5s ease forwards; 
+  
+    animation-delay: calc(.2s * var(--i));
+
+}
+
+
+
+.mo{
+    display: none;
+}
+
+
+
+/* =========================================================================Home Page==================================================================== */
+
+
+
+.home{
+    height: 110vh;
+    width: 100%;
+
+    /* -------------------------------------------------------------------CHANGE BG---------------------------------------------- */
+
+    background-image: url(bg.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    justify-content: center;
+
+}
+
+
+.container-bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hi{
+    margin-right: 200px;
+}
+
+.blur{
+    background-color: rgb(7, 113, 212, 0.4);
+    width: 1250px;
+    height: 80vh;
+    margin-top: -65px;
+    padding-top: 12px;
+    border: 10px beige;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: -950px;
+    border-radius: 30px;
+} 
+
+.container-bg{
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin-left: auto; 
+}
+
+.box{
+    margin-right: 200px;
+}
+
+.home-content{
+    max-width: 600px;
+    margin-top: 80px;
+}
+
+.home-content  h3{
+    font-size: 70px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideLeft 2s ease forwards ;
+    animation-delay: .3s;
+    /* margin-left: 280px; */
+    padding-left:350px;
+    margin-right: -550px;
+    color: #000000;
+}
+
+.home-content  .textjs{
+    font-size: 70px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideLeft 2s ease forwards ;
+    animation-delay: .3s;
+    /* margin-left: 280px; */
+    padding-left:180px;
+    margin-right: -550px;
+    white-space: -15px;
+    font-family: Georgia, serif;
+}
+
+.home-content  .textjs span{
+    color: #ffffff;
+    font-size: 60px;
+    /* white-space: -10px; */
+    font-family: Georgia, serif;
+    /* box-shadow: 0 0 20px rgb(0, 225, 255); */
+}
+
+.home-content  pre{
+    font-size: 100px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideRight 2s ease forwards ;
+    animation-delay: .3s;
+    margin-right: -550px;
+    padding-left: 30px;
+    font-family: Georgia, serif;
+    color: #000000;
+}
+
+.home-content p{
+    font-size: 30px;
+    padding-top: 10px;
+    opacity: 0;
+    animation: slideRight 2s ease forwards ;
+    animation-delay: .3s;
+    margin-right: -310px;
+    padding-left: 200px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    font-size: 40px;
+    color:rgb(255, 255, 255) ;
+    text-decoration: none;
+    margin: 30px 15px 30px 30px;
+    transition: .3s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards ;
+    animation-delay: calc(.2s * var(--i));
+   
+}
+
+.home-sci{
+    margin-left: 300px;
+    margin-right: -150px;
+}
+
+.home-sci a:hover{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+
+}
+
+.wrap{
+    display: flex;
+}
+
+
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(0, 0, 0);
+    border-radius: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0.75;
+    animation: slideRight 1s ease forwards;
+    /* animation-delay: 1s; */
+   
+    margin-top: 255px;
+   margin-right: 540px;
+}
+    
+.btn-box:hover{
+    /* box-shadow: 0 0 5px cyan,
+    0 0 25 cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan */
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.Resume .download-button{
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(0, 0, 0);
+    border-radius: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: -100;
+    animation: slideRight 1s ease forwards;
+    margin-left: 110px;
+    width: 240px;
+    margin-top: 2px; 
+    border: none;
+    height: 5vh;
+
+}
+.Resume .download-button:hover{
+   background: #ffffff;
+   color: #000;
+   box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------ABOUT---------------------------------------------------- */
+
+.about-img{
+
+    display: none;
+}
+
+.pic1{
+    width: 400px;
+    height: 600px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    margin-left: 30%;
+    margin-top: 0%;
+    opacity: 0;
+    animation: slideRight 2s ease forwards ;
+    animation-delay: .3s;
+} 
+
+
+
+/* -----------------------------------Readmore less btn------------------------ */
+
+
+ .boxcon{
+    display: flex;
+    flex-direction: column;
+    color: #e60000;
+    gap: 1rem;
+ }
+
+ .original{
+     padding: 2rem;
+     /* background-color: #332b2b; */
+     border-radius: 2px;
+     line-height: 1.4rem;
+     /* box-shadow: 0 0 1rem blue; */
+ }
+
+ .read-more-btn{
+    color: #ffffff;
+    font-size: 20px;
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(0, 0, 0);
+    border-radius: 40px;
+    font-size: 18px;
+    border: 4px solid black;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+    margin-left: 150px;
+ }
+
+ .read-more-text{
+    display: none;
+ }
+
+ .read-more-text--show{
+    display: inline;
+ }
+
+
+
+   
+.btn-box1:hover{
+    background: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.about-text{
+    margin-right:20%;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+.about-text h2{
+    font-size: 60px;
+    color: #02dffc;
+    margin-left: 150px;
+}
+
+.about-text h2 span{
+    color: #eef4fd;
+}
+.about-text h4{
+     font-size: 30px;
+     font-weight: 600;
+     line-height: 1.7;
+     margin: 15px 0 30px;
+     margin-left: 150px;
+     padding-right: 500px;
+     color: #dfdfdf;
+
+}
+
+.about-text p{
+    color: #ffffff;
+    font-size: 20px;
+    line-height:1.4 ;
+    margin-bottom: 4rem;
+    margin-left: 150px;
+    padding-right: 500px;
+    
+}
+
+.about-text .extra{
+    color: #ffffff;
+    font-size: 20px;
+    line-height:1.4 ;
+    margin-bottom: 4rem;
+    margin-left: 150px;
+    padding-right: 500px;
+}
+
+
+
+.about{
+    height: 100%;
+    width: 100%;
+    /* background: url(wallpaperflare.com_wallpaper.jpg); */
+        /* -------------------------------------------------------------------CHANGE BG---------------------------------------------- */
+
+    background: url(wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.Mybg{
+    width: 100%;
+    height: 100%;
+    
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rgba(2,47,111,0.2);
+    /* opacity: 0.35; */
+    transition: .7s ease;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------Experince-------------------------------------------- */
+
+
+
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 60px;
+
+}
+
+.sub-title span{
+    color: #033E3E;
+}
+
+
+
+.container{
+    padding: 90px;
+}
+
+.services-list{
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(259px.1fr));
+    grid-gap:40px ;
+    margin-top: 50px;
+    box-shadow: 20 20 0  0 rgb(0, 0, 0);
+}
+
+ .services-list div{
+    background: rgb(228, 225, 225);
+    /* background: #000; */
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    margin-bottom: 5%;
+} 
+
+.services-list div:hover{
+ background: #ECC5C0;
+ color: #ffffff;
+}
+
+.services-list div i{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom:15px ;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(71, 70, 70);
+    border-radius: 40px;
+    font-size: 20px;
+    /* color: #ffffff; */
+    color: #eef4fd;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.read:hover{
+    background: #000000;
+    color: white;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.services-list div:hover{
+    transform: translateY(-40px);
+}
+
+
+
+/* ====================================================================================*/
+
+
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
